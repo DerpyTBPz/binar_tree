@@ -1,5 +1,5 @@
 #include <iostream>
-#include <conio.h>
+// #include <conio.h>
 
 struct OldTree 
 {
@@ -46,8 +46,8 @@ void print (OldTree *t, int u)
     else
     {
         print(t->l, ++u);
-        // for (int i=0; i<u; ++i) std::cout << "\n";
-        std::cout << std::endl << t->eng_word << std::endl << t->rus_word << std::endl << t->count << std::endl;
+        for (int i=0; i<u; ++i) std::cout << "|";
+        std::cout << std::endl << t->eng_word << std::endl << t->rus_word << std::endl << t->count << std::endl << std::endl;
         u--;
     }
     print(t->r, ++u);
